@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="test">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bbs"/>
+    <schema id="3" name="bbs2016"/>
+    <schema id="4" name="challenges"/>
+    <schema id="5" name="cms"/>
+    <schema id="6" name="discuz"/>
+    <schema id="7" name="ecshop"/>
+    <schema id="8" name="information_schema"/>
+    <schema id="9" name="mysql"/>
+    <schema id="10" name="myzone"/>
+    <schema id="11" name="phpmyadmin"/>
+    <schema id="12" name="security"/>
+    <schema id="13" name="shopping"/>
+    <schema id="14" name="testguest"/>
+    <schema id="15" name="zvuldrill"/>
+    <table id="16" parent="1" name="category"/>
+    <table id="17" parent="1" name="course"/>
+    <table id="18" parent="1" name="log"/>
+    <table id="19" parent="1" name="msg"/>
+    <table id="20" parent="1" name="score"/>
+    <table id="21" parent="1" name="student"/>
+    <table id="22" parent="1" name="teacher"/>
+    <table id="23" parent="1" name="topic"/>
+    <table id="24" parent="1" name="tree"/>
+    <table id="25" parent="1" name="user"/>
+    <key id="26" parent="16" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="27" parent="17" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="28" parent="18" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <index id="29" parent="19" name="FK_87qfcl8orshwjlllfik5deys5">
+      <columns>topic_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="30" parent="19" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <index id="31" parent="20" name="FK_bx2c2ceovpvc7k9rrwbglinsx">
+      <columns>studentId</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="32" parent="20" name="FK_k1akibewkl0yht550f47b5sam">
+      <columns>courseId</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="33" parent="20" name="FK_niehipr0p798dpw733r2rtlvy">
+      <columns>courseId</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="34" parent="20" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="35" parent="21" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="36" parent="22" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <index id="37" parent="23" name="FK_jqmw7lsw6i6lrdnw07c1id1nt">
+      <columns>category_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="38" parent="23" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <index id="39" parent="24" name="FK_qo8aqaf1fhysixymhxm2y1vrt">
+      <columns>parent_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="40" parent="24" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="41" parent="25" name="PRIMARY">
+      <name-surrogate>1</name-surrogate>
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
